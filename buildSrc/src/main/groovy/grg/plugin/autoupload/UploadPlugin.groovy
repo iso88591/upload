@@ -23,12 +23,12 @@ class UploadPlugin implements Plugin<Project> {
 
         UploadConfig config = project.extensions.create("autoupload", UploadConfig)
 
-       if ("".equals(config.pgyKey.trim())){
-           System.err.println("请在app 的build.gradle中配置autoupload的pgyKey")
-           return
-       }
-
         project.task("uploadAfterAssembleDebug", {
+
+            if ("".equals(config.pgyKey.trim())){
+                System.err.println("请在app 的build.gradle中配置autoupload的pgyKey")
+                return
+            }
 
             dependsOn("assembleDebug").configure {
 
