@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'testplugin'
+apply plugin: 'testplugin2'
+
+apply plugin: 'autoupload'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+//    applicationVariants.all { variant ->
+//        if (variant.buildType.name.equals('release')) {
+//            variant.outputs.all { output ->
+//                def buildName = "Downloader"
+//                def type = variant.buildType.name
+//                def releaseApkName = buildName + '_' + type + "_" + versionName + '_' + getTime() + '.apk'
+//                outputFileName = releaseApkName
+//                variant.packageApplication.outputDirectory = new File("./apk")
+//            }
+//        }
+//    }
+
+
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    // https://mvnrepository.com/artifact/androidx.recyclerview/recyclerview
+    implementation group: 'androidx.recyclerview', name: 'recyclerview', version: '1.1.0'
+
+    implementation 'me.dreamheart.autoscalinglayout:lib:1.6.2'
+//    implementation "org.jetbrains.anko:anko:0.10.8"
+
+    implementation 'com.tencent:mmkv-static:1.0.24'
+
+    // https://mvnrepository.com/artifact/org.objectweb.asm/com.springsource.org.objectweb.asm
+//    implementation group: 'org.objectweb.asm', name: 'com.springsource.org.objectweb.asm', version: '3.2.0'
+
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.8.1'
+
+
+}
+
+//testPlugin{
+//    name = 'thread in fix: sdgsdgsdgsd'
+//}
+
+autoupload{
+    //配置蒲公英 的key
+    pgyKey = ""
+}

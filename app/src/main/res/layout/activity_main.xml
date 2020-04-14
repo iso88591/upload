@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.example.myapplication.AnimatorView
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+        <View
+            android:background="#D12121"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <View
+            android:background="#05E33C"
+            android:layout_width="match_parent"
+            android:layout_height="6000dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView><!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:overScrollMode="never"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <com.example.myapplication.NewsView-->
+    <!--            android:id="@+id/newsView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="30dp"/>-->
+
+    <!--        <com.example.myapplication.RotateOnePartView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="500dp"/>-->
+
+    <!--        <com.example.myapplication.SkewView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="300dp"/>-->
+
+    <!--        <com.example.myapplication.V1View-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="300dp"/>-->
+
+    <!--        <com.example.myapplication.PanView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"/>-->
+
+    <!--        <com.example.myapplication.XfermodeView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"/>-->
+
+    <!--        <com.example.myapplication.DrawTextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"/>-->
+
+    <!--        <com.example.myapplication.PrograssView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="800dp"/>-->
+
+    <!--        <com.example.myapplication.ClipApiTestView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"/>-->
+
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <View-->
+    <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintRight_toRightOf="parent"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintDimensionRatio="1"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"/>c-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="测试文本........" />-->
+
+    <!--    </LinearLayout>-->
+
+    <!--</androidx.core.widget.NestedScrollView>-->
